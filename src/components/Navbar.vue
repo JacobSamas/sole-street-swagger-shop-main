@@ -3,15 +3,14 @@
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <div class="flex-shrink-0">
-          <a href="/" class="text-2xl font-bold text-electric-500">Sole Street</a>
+          <router-link to="/" class="text-2xl font-bold text-electric-500">Sole Street</router-link>
         </div>
         
         <div class="hidden md:block">
           <div class="ml-10 flex items-center space-x-4">
-            <a href="#" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">Men</a>
-            <a href="#" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">Women</a>
-            <a href="#" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">Collections</a>
-            <a href="#" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <router-link to="/products" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">Products</router-link>
+            <router-link to="/about" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">About</router-link>
+            <router-link to="/contact" class="text-gray-700 hover:text-electric-500 px-3 py-2 rounded-md text-sm font-medium">Contact</router-link>
           </div>
         </div>
         
@@ -45,10 +44,9 @@
     <!-- Mobile menu -->
     <div v-if="isMenuOpen" class="md:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">Men</a>
-        <a href="#" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">Women</a>
-        <a href="#" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">Collections</a>
-        <a href="#" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <router-link to="/products" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">Products</router-link>
+        <router-link to="/about" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">About</router-link>
+        <router-link to="/contact" class="text-gray-700 hover:text-electric-500 block px-3 py-2 rounded-md text-base font-medium">Contact</router-link>
       </div>
     </div>
   </nav>
